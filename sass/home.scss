@@ -1,0 +1,64 @@
+@import "reset";
+@import "variables";
+@import "mixins";
+@import "nav";
+@import "footer";
+@import "classes";
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+
+body{
+    background-image: url(/assets/bgImg/MOBILE\ BG\ HOME.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    padding: $body-paddingX-mobile;
+    z-index: 1;
+    @include flex-center(column, null)
+}
+
+.wrapper{
+    width: $wrapper-width-mobile;
+    height: 45rem;
+    z-index: 5;
+    padding-top: 50%;
+
+    .form{
+      @include flex-center(column, 1rem);
+
+    }
+   
+    
+}
+
+.form-container{
+  font-family: 'Open Sans', sans-serif;
+}
+
+
+.visitor-name {
+  border: none;
+  background-color: transparent;
+  resize: none;
+  outline: none;
+  text-align: center;
+  font-size: $fs-mobile-h2;
+  color: $primary-color;
+  text-transform: uppercase;
+}
+
+.visitor-name::placeholder {
+  text-align: center;
+  font-size: $fs-mobile-h2;
+  color: $primary-color;
+  opacity: .65;
+}
+
+.btn{
+  background: none;
+  text-align: center;
+  font-size: $fs-mobile-h2;
+  color: $primary-color;
+  outline: none;
+  border: none;
+}

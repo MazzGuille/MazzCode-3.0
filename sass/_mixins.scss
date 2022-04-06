@@ -1,0 +1,76 @@
+@mixin align($text) {
+  text-align: $text;
+}
+
+@mixin flex-center($direction, $gap) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: $direction;
+    gap: $gap;
+  }
+  @mixin flex-start-y($direction, $gap) {
+    display: flex;
+    justify-content:space-between;
+    align-items: flex-start;
+    flex-direction: $direction;
+    gap: $gap;
+  }
+  
+  @mixin flex-start-x($direction, $gap) {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: $direction;
+    gap: $gap;
+  }
+  
+  @mixin flex-end-y($direction, $gap) {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: $direction;
+    gap: $gap;
+  }
+  
+  @mixin flex-end-x($direction, $gap) {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-direction: $direction;
+    gap: $gap;
+  }
+  
+  @mixin flex-around($direction, $gap) {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: $direction;
+    gap: $gap;
+  }
+  
+  @mixin flex-between($direction, $gap) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: $direction;
+    gap: $gap;
+  }
+  
+  @mixin placeholder-color($color) {
+    &::-webkit-input-placeholder { /* WebKit browsers */
+        color: $color;
+    }
+    &:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+        color: $color;
+    }
+    &::-moz-placeholder { /* Mozilla Firefox 19+ */
+        color: $color;
+    }
+    &:-ms-input-placeholder { /* Internet Explorer 10+ */
+        color: $color;
+    }
+  }
+  
+      
+  

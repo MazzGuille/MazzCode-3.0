@@ -1,0 +1,40 @@
+@import "reset";
+@import "variables";
+@import "mixins";
+@import "nav";
+@import "footer";
+@import "classes";
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+
+body{
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0.25) 0%,rgba(0,0,0,0.25) 100%), url(/assets/bgImg/MOBILE\ BG\ WELCOME.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    padding: $body-paddingX-mobile;
+    z-index: 1;
+    @include flex-center(column, null)
+}
+
+.wrapper{
+    padding-top: 0rem;
+    width: $wrapper-width-mobile;
+    height: auto;
+    z-index: 5;
+
+    .img-container{
+        @include flex-center(row, null);
+        margin-top: 3.5rem;
+
+        .img:hover{
+            transform: scale(1.3);
+            cursor: pointer;
+        }
+    }
+    
+}
+
+#name{
+    text-transform: uppercase;
+}

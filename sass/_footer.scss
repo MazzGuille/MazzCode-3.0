@@ -1,0 +1,14 @@
+.footer{
+    height: $footer-height-mobile;
+    width: 100vw;
+    @include flex-around(row, null);
+    background-color: $secundary-color;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 10;
+
+    .sm-container{
+       @include flex-center(row, .7rem)
+    }
+}
