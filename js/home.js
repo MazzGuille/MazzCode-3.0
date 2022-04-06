@@ -10,3 +10,4 @@ home
 .from('.visitor-name', { opacity: 0, y: -300})
 .from('.btn', { opacity: 0, y: -300}, "-=1"  )
 .from('.footer', { opacity: 0 });
+

@@ -62,3 +62,39 @@ body{
   outline: none;
   border: none;
 }
+
+/* -------------TABLET-------- */
+@media (min-width: 744px) {
+  body{
+      padding: $body-paddingX-tblt; 
+  }
+
+  .wrapper{
+    padding: 0;
+    height: auto;
+    width: 80vw;
+  }
+
+  .btn{
+    font-size: $fs-tblt-h2;
+  }
+
+  .form-container{
+    @include  flex-center(column, 1rem);
+    margin-top: 0;
+  }
+
+h2{
+  width: 80vw;
+  height: 6rem;
+}
+  .visitor-name{
+    width: 80vw;
+  height: 6rem;
+  }
+  .visitor-name::placeholder {
+    font-size: $fs-tblt-h2;
+    width: 100%;
+  }
+
+}
