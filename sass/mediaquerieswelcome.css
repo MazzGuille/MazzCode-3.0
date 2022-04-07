@@ -1,0 +1,266 @@
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role=list],
+ol[role=list] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html {
+  scroll-behavior: smooth;
+  font-size: 62.5%;
+  font-family: "Open Sans", sans-serif;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  -webkit-text-decoration-skip: ink;
+          text-decoration-skip-ink: auto;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:hover {
+  cursor: pointer;
+}
+
+a:focus {
+  outline: none;
+  color: inherit;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *,
+*::before,
+*::after {
+    -webkit-animation-duration: 0.01ms !important;
+            animation-duration: 0.01ms !important;
+    -webkit-animation-iteration-count: 1 !important;
+            animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+/* -------------COLORS------------- */
+/* -------------COLORS------------- */
+/* ---------------FONT SIZE--------------- */
+/* -----MOBILE----- */
+/* -----TABLET----- */
+/* -----DESKTOP SMALL----- */
+/* -----DESKTOP LARGE----- */
+/* ---------------GAPS--------------- */
+/* -----MOBILE----- */
+/* -----TABLET----- */
+/* -----DESKTOP SMALL----- */
+/* -----DESKTOP L----- */
+/* --------------------TABLET---------------------*/
+/* ---------------NAV----------------- */
+@media only screen and (min-width: 744px) {
+  .nav {
+    height: 16.8rem;
+    width: 90%;
+  }
+  .nav .img-container {
+    height: 12.4rem;
+    width: 12.4rem;
+    background-image: url(/assets/logos/TABLET\ LOGO.svg);
+  }
+
+  .nav-menu {
+    background-color: #fff;
+    position: relative;
+    height: 0.5rem;
+    width: 4.5rem;
+    z-index: 51;
+    transition: all 0.5s ease-in-out;
+  }
+  .nav-menu:before {
+    content: "";
+    position: absolute;
+    top: -1.3rem;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    transition: all 0.5s ease-in-out;
+  }
+  .nav-menu:after {
+    content: "";
+    position: absolute;
+    top: 1.3rem;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    transition: all 0.5s ease-in-out;
+  }
+
+  .menu-container.open .nav-menu::before {
+    transform: rotate(780.5deg) translate(3.5rem, -3.5rem);
+  }
+
+  .menu-container.open .nav-menu::after {
+    transform: rotate(-780.5deg) translate(3.5rem, 3.5rem);
+  }
+
+  .link-container {
+    font-size: 5rem;
+    right: -5rem;
+    top: -8rem;
+    height: 110vh;
+  }
+
+  /* ---------------home----------------- */
+  body {
+    padding: 4.4rem;
+    background-image: url(/assets/bgImg/TABLET\ BG\ HOME.svg);
+  }
+
+  .wrapper {
+    padding: 0;
+    height: auto;
+    width: 80vw;
+  }
+
+  .btn {
+    font-size: 5rem;
+  }
+
+  .form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 0;
+  }
+
+  h2 {
+    width: 80vw;
+    height: 6rem;
+  }
+
+  .visitor-name {
+    width: 80vw;
+    height: 6rem;
+  }
+
+  .visitor-name::-moz-placeholder {
+    font-size: 5rem;
+    width: 100%;
+  }
+
+  .visitor-name:-ms-input-placeholder {
+    font-size: 5rem;
+    width: 100%;
+  }
+
+  .visitor-name::placeholder {
+    font-size: 5rem;
+    width: 100%;
+  }
+
+  /* ---------------footer----------------- */
+  .footer {
+    height: 7.4rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    gap: 5rem;
+  }
+
+  .footer-mobile {
+    height: 100%;
+    width: auto;
+    font-size: 1.65rem;
+    display: grid;
+    place-content: center;
+  }
+
+  .sm-container {
+    height: 100%;
+    width: 30rem;
+    gap: 1.44rem;
+  }
+
+  .linkedin {
+    background-image: url(/assets/socialmedia/TABLET_LINKEDIN.svg);
+    height: 5.4rem;
+    width: 5.4rem;
+  }
+
+  .github {
+    background-image: url(/assets/socialmedia/TABLET_GITHUB.svg);
+    height: 5.4rem;
+    width: 5.4rem;
+  }
+
+  .instagram {
+    background-image: url(/assets/socialmedia/TABLET_INSTAGRAM.svg);
+    height: 5.4rem;
+    width: 5.4rem;
+  }
+
+  .twitter {
+    background-image: url(/assets/socialmedia/TABLET_TWITTER.svg);
+    height: 5.4rem;
+    width: 5.4rem;
+  }
+
+  .facebook {
+    background-image: url(/assets/socialmedia/TABLET_FACEBOOK.svg);
+    height: 5.4rem;
+    width: 5.4rem;
+  }
+}/*# sourceMappingURL=mediaquerieswelcome.css.map */

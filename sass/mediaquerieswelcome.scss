@@ -1,0 +1,150 @@
+@import "reset";
+@import "variables";
+@import "mixins";
+/* --------------------TABLET---------------------*/ 
+/* ---------------NAV----------------- */
+@media only screen and (min-width: 744px) {
+    .nav{
+      height: 16.8rem;
+      width: 90%;
+      .img-container
+      {
+        height: 12.4rem;
+        width: 12.4rem;
+        background-image: url(/assets/logos/TABLET\ LOGO.svg);
+      }
+        
+    }
+  
+    .nav-menu {
+      background-color: $primary-color;
+      position: relative;
+      height: .5rem;
+      width: 4.5rem;
+      z-index: 51;
+      transition: all 0.5s ease-in-out;
+    
+      &:before {
+        content: "";
+        position: absolute;
+        top: -1.3rem;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: $primary-color;
+        transition: all 0.5s ease-in-out;
+      }
+    
+      &:after {
+        content: "";
+        position: absolute;
+        top: 1.3rem;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: $primary-color;
+        transition: all 0.5s ease-in-out;
+      }
+    }
+  
+    .menu-container.open .nav-menu::before {
+      transform: rotate(780.5deg) translate(3.5rem, -3.5rem);
+  }
+  
+  .menu-container.open .nav-menu::after {
+      transform: rotate(-780.5deg) translate(3.5rem, 3.5rem);
+  }
+    
+    .link-container{
+      font-size: $fs-tblt-h2;
+      right: -5rem;
+      top: -8rem;
+      height: 110vh;
+    }
+
+    /* ---------------home----------------- */
+    body{
+      padding: $body-paddingX-tblt; 
+      background-image: url(/assets/bgImg/TABLET\ BG\ HOME.svg);
+  }
+
+  .wrapper{
+    padding: 0;
+    height: auto;
+    width: 80vw;
+  }
+
+  .btn{
+    font-size: $fs-tblt-h2;
+  }
+
+  .form-container{
+    @include  flex-center(column, 1rem);
+    margin-top: 0;
+  }
+
+h2{
+  width: 80vw;
+  height: 6rem;
+}
+  .visitor-name{
+    width: 80vw;
+  height: 6rem;
+  }
+  .visitor-name::placeholder {
+    font-size: $fs-tblt-h2;
+    width: 100%;
+  }
+ 
+    /* ---------------footer----------------- */
+    .footer{
+        height: $footer-height-tblt;
+        @include flex-around(row, 5rem);
+
+    }
+    
+    .footer-mobile{
+        height: 100%;
+        width: auto;
+        font-size: $fs-tblt-footer;
+        display: grid;
+        place-content: center;
+    }
+    
+    .sm-container{
+      height: 100%;
+      width: 30rem;
+        gap: 1.44rem;
+    }
+    
+    .linkedin{
+      background-image: url(/assets/socialmedia/TABLET_LINKEDIN.svg);
+      height: 5.4rem;
+      width: 5.4rem;     
+  }
+ 
+  .github{
+      background-image: url(/assets/socialmedia/TABLET_GITHUB.svg);
+      height: 5.4rem;
+      width: 5.4rem;
+  }
+ 
+  .instagram{
+      background-image: url(/assets/socialmedia/TABLET_INSTAGRAM.svg);
+      height: 5.4rem;
+      width: 5.4rem;
+  }
+ 
+  .twitter{
+      background-image: url(/assets/socialmedia/TABLET_TWITTER.svg);
+      height: 5.4rem;
+      width: 5.4rem;
+  }
+ 
+  .facebook{
+      background-image: url(/assets/socialmedia/TABLET_FACEBOOK.svg);
+      height: 5.4rem;
+      width: 5.4rem;
+  }
+    
+  }

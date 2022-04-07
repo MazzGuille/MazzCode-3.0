@@ -1,9 +1,9 @@
 @import "reset";
 @import "variables";
 @import "mixins";
+@import "classes";
 @import "nav";
 @import "footer";
-@import "classes";
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
 
 body{
@@ -61,40 +61,4 @@ body{
   color: $primary-color;
   outline: none;
   border: none;
-}
-
-/* -------------TABLET-------- */
-@media (min-width: 744px) {
-  body{
-      padding: $body-paddingX-tblt; 
-  }
-
-  .wrapper{
-    padding: 0;
-    height: auto;
-    width: 80vw;
-  }
-
-  .btn{
-    font-size: $fs-tblt-h2;
-  }
-
-  .form-container{
-    @include  flex-center(column, 1rem);
-    margin-top: 0;
-  }
-
-h2{
-  width: 80vw;
-  height: 6rem;
-}
-  .visitor-name{
-    width: 80vw;
-  height: 6rem;
-  }
-  .visitor-name::placeholder {
-    font-size: $fs-tblt-h2;
-    width: 100%;
-  }
-
 }

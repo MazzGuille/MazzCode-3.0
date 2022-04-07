@@ -104,243 +104,6 @@ select {
 /* -----TABLET----- */
 /* -----DESKTOP SMALL----- */
 /* -----DESKTOP L----- */
-.nav {
-  height: 8rem;
-  width: 32rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-direction: row;
-  position: fixed;
-  top: 2rem;
-  z-index: 15;
-}
-.nav .img-container {
-  height: 6rem;
-  width: 6rem;
-  background-image: url(/assets/logos/MOBILE\ LOGO.svg);
-}
-
-.menu-container {
-  transition: all 0.5s ease-in-out;
-  height: 2rem;
-  width: 2rem;
-}
-
-.nav-menu {
-  background-color: #fff;
-  position: relative;
-  height: 0.1rem;
-  width: 2rem;
-  z-index: 51;
-  transition: all 0.5s ease-in-out;
-}
-.nav-menu:before {
-  content: "";
-  position: absolute;
-  top: -0.5rem;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: #fff;
-  transition: all 0.5s ease-in-out;
-}
-.nav-menu:after {
-  content: "";
-  position: absolute;
-  top: 0.5rem;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: #fff;
-  transition: all 0.5s ease-in-out;
-}
-
-.menu-container.open .nav-menu {
-  transform: translateX(-5rem);
-  background: transparent;
-}
-
-.menu-container.open .nav-menu::before {
-  transform: rotate(771deg) translate(3.5rem, -3.5rem);
-}
-
-.menu-container.open .nav-menu::after {
-  transform: rotate(-771deg) translate(3.5rem, 3.5rem);
-}
-
-.link-container {
-  height: 100vh;
-  width: 80vw;
-  position: absolute;
-  top: -4.5rem;
-  right: -2.7rem;
-  display: hidden;
-  z-index: 50;
-  background-color: #0F1221;
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  flex-direction: column;
-  gap: 6rem;
-  list-style: none;
-  font-size: 2.5rem;
-  font-weight: 600;
-  color: #fff;
-  overflow: hidden;
-}
-
-.hide {
-  display: none;
-}
-
-/* --------------MEDIA QUERY TABLET----------------- */
-@media (min-width: 744px) {
-  .nav {
-    height: 16.8rem;
-    width: 90%;
-  }
-  .nav .img-container {
-    height: 12.4rem;
-    width: 12.4rem;
-    background-image: url(/assets/logos/TABLET\ LOGO.svg);
-  }
-
-  .nav-menu {
-    background-color: #fff;
-    position: relative;
-    height: 0.5rem;
-    width: 4.5rem;
-    z-index: 51;
-    transition: all 0.5s ease-in-out;
-  }
-  .nav-menu:before {
-    content: "";
-    position: absolute;
-    top: -1.3rem;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: #fff;
-    transition: all 0.5s ease-in-out;
-  }
-  .nav-menu:after {
-    content: "";
-    position: absolute;
-    top: 1.3rem;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: #fff;
-    transition: all 0.5s ease-in-out;
-  }
-
-  .menu-container.open .nav-menu::before {
-    transform: rotate(780.5deg) translate(3.5rem, -3.5rem);
-  }
-
-  .menu-container.open .nav-menu::after {
-    transform: rotate(-780.5deg) translate(3.5rem, 3.5rem);
-  }
-
-  .link-container {
-    font-size: 5rem;
-    right: -5rem;
-    top: -8rem;
-    height: 110vh;
-  }
-}
-.footer {
-  height: 3.6rem;
-  width: 100vw;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-direction: row;
-  background-color: #0F1221;
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  z-index: 10;
-}
-.footer .sm-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;
-  gap: 0.7rem;
-}
-.footer .linkedin {
-  background-image: url(/assets/socialmedia/MOBILE_LINKEDIN.svg);
-  height: 2.5rem;
-  width: 2.5rem;
-}
-.footer .github {
-  background-image: url(/assets/socialmedia/MOBILE_GITHUB.svg);
-  height: 2.5rem;
-  width: 2.5rem;
-}
-.footer .instagram {
-  background-image: url(/assets/socialmedia/MOBILE_INSTAGRAM.svg);
-  height: 2.5rem;
-  width: 2.5rem;
-}
-.footer .twitter {
-  background-image: url(/assets/socialmedia/MOBILE_TWITTER.svg);
-  height: 2.5rem;
-  width: 2.5rem;
-}
-.footer .facebook {
-  background-image: url(/assets/socialmedia/MOBILE_FACEBOOK.svg);
-  height: 2.5rem;
-  width: 2.5rem;
-}
-
-@media (min-width: 744px) {
-  .footer {
-    height: 7.4rem;
-    width: 100vw;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-direction: row;
-    background-color: #0F1221;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    z-index: 10;
-  }
-
-  .linkedin {
-    background-image: url(/assets/socialmedia/TABLET_LINKEDIN.svg);
-    height: 5.4rem;
-    width: 5.4rem;
-  }
-
-  .github {
-    background-image: url(/assets/socialmedia/TABLET_GITHUB.svg);
-    height: 5.4rem;
-    width: 5.4rem;
-  }
-
-  .instagram {
-    background-image: url(/assets/socialmedia/TABLET_INSTAGRAM.svg);
-    height: 5.4rem;
-    width: 5.4rem;
-  }
-
-  .twitter {
-    background-image: url(/assets/socialmedia/TABLET_TWITTER.svg);
-    height: 5.4rem;
-    width: 5.4rem;
-  }
-
-  .facebook {
-    background-image: url(/assets/socialmedia/TABLET_FACEBOOK.svg);
-    height: 5.4rem;
-    width: 5.4rem;
-  }
-}
 /* -------------------FONTS------------- */
 /* -----MOBILE----- */
 .h1-mobile {
@@ -529,6 +292,142 @@ select {
 }
 
 /* -------MARGINS & PADDINGS------- */
+.nav {
+  height: 8rem;
+  width: 32rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  position: fixed;
+  top: 2rem;
+  z-index: 15;
+}
+.nav .img-container {
+  height: 6rem;
+  width: 6rem;
+  background-image: url(/assets/logos/MOBILE\ LOGO.svg);
+}
+
+.menu-container {
+  transition: all 0.5s ease-in-out;
+  height: 2rem;
+  width: 2rem;
+}
+
+.nav-menu {
+  background-color: #fff;
+  position: relative;
+  height: 0.1rem;
+  width: 2rem;
+  z-index: 51;
+  transition: all 0.5s ease-in-out;
+}
+.nav-menu:before {
+  content: "";
+  position: absolute;
+  top: -0.5rem;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  transition: all 0.5s ease-in-out;
+}
+.nav-menu:after {
+  content: "";
+  position: absolute;
+  top: 0.5rem;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  transition: all 0.5s ease-in-out;
+}
+
+.menu-container.open .nav-menu {
+  transform: translateX(-5rem);
+  background: transparent;
+}
+
+.menu-container.open .nav-menu::before {
+  transform: rotate(771deg) translate(3.5rem, -3.5rem);
+}
+
+.menu-container.open .nav-menu::after {
+  transform: rotate(-771deg) translate(3.5rem, 3.5rem);
+}
+
+.link-container {
+  height: 100vh;
+  width: 80vw;
+  position: absolute;
+  top: -4.5rem;
+  right: -2.7rem;
+  display: hidden;
+  z-index: 50;
+  background-color: #0F1221;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 6rem;
+  list-style: none;
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #fff;
+  overflow: hidden;
+}
+
+.hide {
+  display: none;
+}
+
+.footer {
+  height: 3.6rem;
+  width: 100vw;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  background-color: #0F1221;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 10;
+}
+.footer .sm-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 0.7rem;
+}
+.footer .linkedin {
+  background-image: url(/assets/socialmedia/MOBILE_LINKEDIN.svg);
+  height: 2.5rem;
+  width: 2.5rem;
+}
+.footer .github {
+  background-image: url(/assets/socialmedia/MOBILE_GITHUB.svg);
+  height: 2.5rem;
+  width: 2.5rem;
+}
+.footer .instagram {
+  background-image: url(/assets/socialmedia/MOBILE_INSTAGRAM.svg);
+  height: 2.5rem;
+  width: 2.5rem;
+}
+.footer .twitter {
+  background-image: url(/assets/socialmedia/MOBILE_TWITTER.svg);
+  height: 2.5rem;
+  width: 2.5rem;
+}
+.footer .facebook {
+  background-image: url(/assets/socialmedia/MOBILE_FACEBOOK.svg);
+  height: 2.5rem;
+  width: 2.5rem;
+}
+
 body {
   background-image: url(/assets/bgImg/MOBILE\ BG\ HOME.svg);
   background-size: cover;
@@ -600,55 +499,4 @@ body {
   color: #fff;
   outline: none;
   border: none;
-}
-
-/* -------------TABLET-------- */
-@media (min-width: 744px) {
-  body {
-    padding: 4.4rem;
-  }
-
-  .wrapper {
-    padding: 0;
-    height: auto;
-    width: 80vw;
-  }
-
-  .btn {
-    font-size: 5rem;
-  }
-
-  .form-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    gap: 1rem;
-    margin-top: 0;
-  }
-
-  h2 {
-    width: 80vw;
-    height: 6rem;
-  }
-
-  .visitor-name {
-    width: 80vw;
-    height: 6rem;
-  }
-
-  .visitor-name::-moz-placeholder {
-    font-size: 5rem;
-    width: 100%;
-  }
-
-  .visitor-name:-ms-input-placeholder {
-    font-size: 5rem;
-    width: 100%;
-  }
-
-  .visitor-name::placeholder {
-    font-size: 5rem;
-    width: 100%;
-  }
 }/*# sourceMappingURL=home.css.map */

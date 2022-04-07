@@ -42,49 +42,8 @@
         height: 2.5rem;
         width: 2.5rem;
     }
+
+    
 }
 
 
-@media (min-width: 744px) {
-
-    .footer{
-        height: $footer-height-tblt;
-        width: 100vw;
-        @include flex-around(row, null);
-        background-color: $secundary-color;
-        position: fixed;
-        bottom: 0;
-        left: 0;
-        z-index: 10;
-    }
- 
-     .linkedin{
-         background-image: url(/assets/socialmedia/TABLET_LINKEDIN.svg);
-         height: 5.4rem;
-         width: 5.4rem;
-     }
- 
-     .github{
-         background-image: url(/assets/socialmedia/TABLET_GITHUB.svg);
-         height: 5.4rem;
-         width: 5.4rem;
-     }
- 
-     .instagram{
-         background-image: url(/assets/socialmedia/TABLET_INSTAGRAM.svg);
-         height: 5.4rem;
-         width: 5.4rem;
-     }
- 
-     .twitter{
-         background-image: url(/assets/socialmedia/TABLET_TWITTER.svg);
-         height: 5.4rem;
-         width: 5.4rem;
-     }
- 
-     .facebook{
-         background-image: url(/assets/socialmedia/TABLET_FACEBOOK.svg);
-         height: 5.4rem;
-         width: 5.4rem;
-     }
-}
