@@ -204,20 +204,20 @@ select {
 
 @media (min-width: 0) {
   .wrapper {
-    margin-top: 7rem;
+    margin-top: 4rem;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     gap: 3rem;
-    height: 48rem;
+    height: 55rem;
     width: 80%;
     overflow: hidden;
   }
 }
 @media (min-width: 744px) {
   .wrapper {
-    margin-top: 10rem;
+    margin-top: 8rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -225,7 +225,6 @@ select {
     gap: 3rem;
     height: 80rem;
     width: 80%;
-    overflow: hidden;
     overflow: hidden;
   }
 }

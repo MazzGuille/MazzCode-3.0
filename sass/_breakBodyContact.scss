@@ -95,19 +95,18 @@ body {
 
   .wrapper {
     @include xs {
-      margin-top: 7rem;
+      margin-top: 4rem;
       @include flex-center(column, 3rem);
-      height: 48rem;
+      height: 55rem;
       width: 80%;
       overflow: hidden;
     }
   
     @include sm {
-        margin-top: 10rem;
+        margin-top: 8rem;
         @include flex-center(column, 3rem);
         height: 80rem;
         width: 80%;
-        overflow: hidden;
         overflow: hidden;
     }
   
