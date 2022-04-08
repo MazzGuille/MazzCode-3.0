@@ -1,9 +1,9 @@
 @import "reset";
 @import "variables";
 @import "mixins";
-@import "classes";
 @import "nav";
 @import "footer";
+@import "breakpoints";
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
 
 body{
@@ -21,44 +21,36 @@ body{
     width: $wrapper-width-mobile;
     height: 45rem;
     z-index: 5;
-    padding-top: 50%;
-
-    .form{
-      @include flex-center(column, 1rem);
-
-    }
-   
-    
+    padding-top: 20%;
 }
+
 
 .form-container{
   font-family: 'Open Sans', sans-serif;
+  height: 100%;
+  width: 100%;
+  @include flex-center(column, null);
 }
 
 
-.visitor-name {
+.name {
   border: none;
-  background-color: transparent;
+  background: none;
   resize: none;
   outline: none;
   text-align: center;
-  font-size: $fs-mobile-h2;
-  color: $primary-color;
   text-transform: uppercase;
 }
 
-.visitor-name::placeholder {
+.name::placeholder {
   text-align: center;
-  font-size: $fs-mobile-h2;
   color: $primary-color;
-  opacity: .65;
+  opacity: .65;  
 }
 
 .btn{
   background: none;
   text-align: center;
-  font-size: $fs-mobile-h2;
-  color: $primary-color;
   outline: none;
   border: none;
 }

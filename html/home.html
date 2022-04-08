@@ -1,66 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <meta name="viewport" content="width=device-width, user-scalable=no"> -->
-    <!-- ------------CSS LINKS------------ -->
-    <link rel="stylesheet" href="/sass/home.css">
-    <link rel="stylesheet" href="/sass/mediaquerieshome.css">
-    <!-- ------------JS LINKS------------ -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
-    <script defer src="/js/home.js"></script>
-    <script defer src="/js/nav.js"></script>
-    <title>MazzCode-HOME</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- ------------CSS LINKS------------ -->
+  <link rel="stylesheet" href="/sass/home.css">
+  <!-- ------------JS LINKS------------ -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+  <script defer src="/js/home.js"></script>
+  <script defer src="/js/nav.js"></script>
+  <title>MazzCode-HOME</title>
 </head>
+
 <body>
-   <header class="nav">
-       <div class="img-container">
-           
-       </div>
-       
-           <div class="menu-container">
-               <div class="nav-menu"></div>
-           </div>
-       
-        <ul class="link-container hide">
-            <a href="/html/home.html">
-              <li>Home</li>
-            </a>
-            <a href="/html/about.html">
-              <li>About</li>
-            </a>
-            <a href="/html/about.html#proyects">
-              <li>Proyects</li>
-            </a>
-            <a href="/html/contact.html">
-              <li>Contact</li>
-            </a>
-          </ul>
-   </header>
-   <div class="wrapper">       
-           <form autocomplete="off" action="/html/welcome.html" class="form-container">
-            <h2 class="h2-mobile"><input class="visitor-name" type="text" id="txt" placeholder="ENTER YOUR NAME"></h2>
-               <br>
-               <h2 class="h2-mobile"><input class="btn" type="submit" value="LET'S GO!" onclick="welcome();"></h2>
-           </form>       
-   </div>
-   <footer class="footer">
-       <div class="footer-mobile">MAZZ-CODE</div>
-       <div class="sm-container">
-           <a href="https://www.linkedin.com/feed/"
-           target="_blank"><div class="linkedin"></div></a>
-           <a href="https://github.com/MazzGuille"
-           target="_blank"><div class="github"></div></a>
-           <a href="https://www.instagram.com/mazzguille/?hl=es"
-           target="_blank"><div class="instagram"></div></a>
-           <a href="https://twitter.com/MazzGuille"
-           target="_blank"><div class="twitter"></div></a>
-           <a href="https://www.facebook.com/guillermo.giovanardi"
-           target="_blank"><div class="facebook"></div></a>           
-       </div>
-   </footer>
+  <header class="nav nav-responsive">
+    <div class="logo-container">
+
+    </div>
+
+    <div class="menu-container">
+      <div class="nav-menu"></div>
+    </div>
+
+    <ul class="link-container resposive-font-h2 hide">
+      <a href="/html/home.html">
+        <li>Home</li>
+      </a>
+      <a href="/html/about.html">
+        <li>About</li>
+      </a>
+      <a href="/html/about.html#proyects">
+        <li>Proyects</li>
+      </a>
+      <a href="/html/contact.html">
+        <li>Contact</li>
+      </a>
+    </ul>
+  </header>
+    <form autocomplete="off" action="/html/welcome.html" class="form-container">
+      <input class="resposive-font-h2 name" type="text" id="txt" placeholder="ENTER YOUR NAME">
+      <input class="resposive-font-h2 btn" type="submit" value="LET'S GO!" onclick="welcome();">
+    </form>  
+  <footer class="responsive-footer">
+    <div class="resposive-font-footer">MAZZ-CODE</div>
+    <div class="sm-container">
+      <a href="https://www.linkedin.com/feed/" target="_blank"><div class="linkedin"></div></a>
+      <a href="https://github.com/MazzGuille" target="_blank"><div class="github"></div></a>
+      <a href="https://www.instagram.com/mazzguille/?hl=es" target="_blank"><div class="instagram"></div></a>
+      <a href="https://twitter.com/MazzGuille" target="_blank"><div class="twitter"></div></a>
+      <a href="https://www.facebook.com/guillermo.giovanardi" target="_blank"><div class="facebook"></div></a>
+    </div>
+  </footer>
 </body>
+
 </html>
 

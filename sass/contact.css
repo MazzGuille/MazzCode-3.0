@@ -105,20 +105,12 @@ select {
 /* -----DESKTOP SMALL----- */
 /* -----DESKTOP L----- */
 .nav {
-  height: 8rem;
-  width: 32rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-direction: row;
   position: fixed;
-  top: 2rem;
   z-index: 15;
-}
-.nav .img-container {
-  height: 6rem;
-  width: 6rem;
-  background-image: url(/assets/logos/MOBILE\ LOGO.svg);
 }
 
 .menu-container {
@@ -127,307 +119,19 @@ select {
   width: 2rem;
 }
 
-.nav-menu {
-  background-color: #fff;
-  position: relative;
-  height: 0.1rem;
-  width: 2rem;
-  z-index: 51;
-  transition: all 0.5s ease-in-out;
-}
-.nav-menu:before {
-  content: "";
-  position: absolute;
-  top: -0.5rem;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: #fff;
-  transition: all 0.5s ease-in-out;
-}
-.nav-menu:after {
-  content: "";
-  position: absolute;
-  top: 0.5rem;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: #fff;
-  transition: all 0.5s ease-in-out;
-}
-
 .menu-container.open .nav-menu {
   transform: translateX(-5rem);
   background: transparent;
 }
 
-.menu-container.open .nav-menu::before {
-  transform: rotate(771deg) translate(3.5rem, -3.5rem);
-}
-
-.menu-container.open .nav-menu::after {
-  transform: rotate(-771deg) translate(3.5rem, 3.5rem);
-}
-
-.link-container {
-  height: 100vh;
-  width: 80vw;
-  position: absolute;
-  top: -4.5rem;
-  right: -2.7rem;
-  display: hidden;
-  z-index: 50;
-  background-color: #0F1221;
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  flex-direction: column;
-  gap: 6rem;
-  list-style: none;
-  font-size: 2.5rem;
-  font-weight: 600;
-  color: #fff;
-  overflow: hidden;
-}
-
-.hide {
-  display: none;
-}
-
-.footer {
-  height: 3.6rem;
-  width: 100vw;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-direction: row;
-  background-color: #0F1221;
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  z-index: 10;
-}
-.footer .sm-container {
+.sm-container {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: row;
   gap: 0.7rem;
 }
-.footer .linkedin {
-  background-image: url(/assets/socialmedia/MOBILE_LINKEDIN.svg);
-  height: 2.5rem;
-  width: 2.5rem;
-}
-.footer .github {
-  background-image: url(/assets/socialmedia/MOBILE_GITHUB.svg);
-  height: 2.5rem;
-  width: 2.5rem;
-}
-.footer .instagram {
-  background-image: url(/assets/socialmedia/MOBILE_INSTAGRAM.svg);
-  height: 2.5rem;
-  width: 2.5rem;
-}
-.footer .twitter {
-  background-image: url(/assets/socialmedia/MOBILE_TWITTER.svg);
-  height: 2.5rem;
-  width: 2.5rem;
-}
-.footer .facebook {
-  background-image: url(/assets/socialmedia/MOBILE_FACEBOOK.svg);
-  height: 2.5rem;
-  width: 2.5rem;
-}
 
-/* -------------------FONTS------------- */
-/* -----MOBILE----- */
-.h1-mobile {
-  font-size: 2.8rem;
-  font-weight: 800;
-  color: #fff;
-  text-align: center;
-}
-
-.h2-mobile {
-  font-size: 2.5rem;
-  font-weight: 700;
-  color: #fff;
-  text-align: center;
-}
-
-.h3-mobile {
-  font-size: 2rem;
-  font-weight: 500;
-  color: #fff;
-  text-align: center;
-}
-
-.txt-mobile-right {
-  font-size: 1.6rem;
-  font-weight: 400;
-  color: #fff;
-  text-align: right;
-}
-
-.txt-mobile-left {
-  font-size: 1.6rem;
-  font-weight: 400;
-  color: #fff;
-  text-align: left;
-}
-
-.footer-mobile {
-  font-size: 0.8rem;
-  font-weight: 400;
-  color: #fff;
-  text-align: left;
-}
-
-/* -----TABLET----- */
-.h1-tblt {
-  font-size: 6rem;
-  font-weight: 800;
-  color: #fff;
-  text-align: center;
-}
-
-.h2-tblt {
-  font-size: 5rem;
-  font-weight: 700;
-  color: #fff;
-  text-align: center;
-}
-
-.h3-tblt {
-  font-size: 4rem;
-  font-weight: 500;
-  color: #fff;
-  text-align: center;
-}
-
-.txt-tblt-right {
-  font-size: 3.2rem;
-  font-weight: 400;
-  color: #fff;
-  text-align: right;
-}
-
-.txt-tblt-left {
-  font-size: 3.2rem;
-  font-weight: 400;
-  color: #fff;
-  text-align: left;
-}
-
-.footer-tblt {
-  font-size: 1.65rem;
-  font-weight: 400;
-  color: #fff;
-  text-align: left;
-}
-
-/* --------DESKTOP SMALL-------- */
-.h1-dskS {
-  font-size: 10rem;
-  font-weight: 800;
-  color: #fff;
-  text-align: center;
-}
-
-.h2-dskS {
-  font-size: 9rem;
-  font-weight: 700;
-  color: #fff;
-  text-align: center;
-}
-
-.h3-dskS {
-  font-size: 8rem;
-  font-weight: 500;
-  color: #fff;
-  text-align: center;
-}
-
-.txt-dskS-right {
-  font-size: 3.5rem;
-  font-weight: 400;
-  color: #fff;
-  text-align: right;
-}
-
-.txt-dskS-left {
-  font-size: 3.5rem;
-  font-weight: 400;
-  color: #fff;
-  text-align: left;
-}
-
-.nav-dskS {
-  font-size: 2.5rem;
-  font-weight: 400;
-  color: #fff;
-  text-align: left;
-}
-
-.footer-dsks {
-  font-size: 3.5rem;
-  font-weight: 400;
-  color: #fff;
-  text-align: left;
-}
-
-/* ------ DESKTOP LARGE ------ */
-.h1-dskL {
-  font-size: 11rem;
-  font-weight: 800;
-  color: #fff;
-  text-align: center;
-}
-
-.h2-dskL {
-  font-size: 10rem;
-  font-weight: 700;
-  color: #fff;
-  text-align: center;
-}
-
-.h3-dskL {
-  font-size: 9rem;
-  font-weight: 500;
-  color: #fff;
-  text-align: center;
-}
-
-.txt-dskL-right {
-  font-size: 3.2rem;
-  font-weight: 400;
-  color: #fff;
-  text-align: right;
-}
-
-.txt-dskL-left {
-  font-size: 3.2rem;
-  font-weight: 400;
-  color: #fff;
-  text-align: left;
-}
-
-.nav-dskL {
-  font-size: 3rem;
-  font-weight: 400;
-  color: #fff;
-  text-align: left;
-}
-
-.footer-dskL {
-  font-size: 4rem;
-  font-weight: 400;
-  color: #fff;
-  text-align: left;
-}
-
-/* -------MARGINS & PADDINGS------- */
 body {
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%), url(/assets/bgImg/MOBILE\ BG\ CONTACT.svg);
   background-size: cover;
