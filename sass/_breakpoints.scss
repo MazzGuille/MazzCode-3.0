@@ -37,45 +37,6 @@ $breakpoints: (
   }
 }
 
-/* -------------------body margins----------------- */
-body {
-  @include xs {
-    background-image: url(/assets/bgImg/MOBILE\ BG\ HOME.svg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
-    padding: $body-paddingX-mobile;
-  }
-
-  @include sm {
-    background-image: url(/assets/bgImg/TABLET\ BG\ HOME.svg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
-    padding: $body-paddingX-tblt;
-  }
-
-  @include md {
-    background-image: url(/assets/bgImg/DESKTOP\ S\ HOME.svg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
-    padding: $body-paddingX-dskS;
-  }
-
-  @include lg {
-    background-image: url(/assets/bgImg/DESKTOP\ L\ HOME.svg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
-    padding: $body-paddingX-dskL;
-  }
-}
-
 /* ------------------FONT SIZE----------------- */
 .resposive-font-h1 {
   @include xs {
@@ -218,6 +179,61 @@ body {
     font-size: $fs-dskL-nav;
     color: $primary-color;
     font-weight: 500;
+  }
+}
+
+/* -------------TEXT ALIGNS----------------- */
+.text-center {
+  @include xs {
+    text-align: center;
+  }
+
+  @include sm {
+    text-align: center;
+  }
+
+  @include md {
+    text-align: center;
+  }
+
+  @include lg {
+    text-align: center;
+  }
+}
+
+.text-left {
+  @include xs {
+    text-align: left;
+  }
+
+  @include sm {
+    text-align: left;
+  }
+
+  @include md {
+    text-align: left;
+  }
+
+  @include lg {
+    text-align: left;
+  }
+}
+
+.text-right {
+  @include xs {
+    text-align: right;
+  }
+
+  @include sm {
+    text-align: right;
+  }
+
+  @include md {
+    text-align: right;
+  }
+
+  @include lg {
+    text-align: right;
   }
 }
 
@@ -465,24 +481,50 @@ body {
     height: $nav-height-mobile;
     width: $wrapper-width-mobile;
     top: $body-paddingX-mobile;
+    @include flex-between(row, null);
+    position: fixed;
+    z-index: 15;
   }
 
   @include sm {
     height: $nav-height-tblt;
     width: $wrapper-width-tblt;
     top: $body-paddingX-tblt;
+    @include flex-between(row, null);
+    position: fixed;
+    z-index: 15;
   }
 
   @include md {
     height: $nav-height-dskS;
     width: $wrapper-width-dskS;
     top: $body-paddingX-dskS;
+    @include flex-between(row, null);
+    position: fixed;
+    z-index: 15;
   }
 
   @include lg {
     height: $nav-height-dskL;
     width: $wrapper-width-dskL;
     top: $body-paddingX-dskL;
+    @include flex-between(row, null);
+    position: fixed;
+    z-index: 15;
+  }
+}
+
+.nav-dsk-container {
+  @include md {
+    width: 100%;
+    height: 100%;
+    @include flex-between(row, null);
+  }
+
+  @include lg {
+    width: 100%;
+    height: 100%;
+    @include flex-between(row, null);
   }
 }
 

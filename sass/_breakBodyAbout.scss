@@ -1,0 +1,108 @@
+$breakpoints: (
+  "xs": 0,
+  "sm": 744px,
+  "md": 1280px,
+  "lg": 1440px,
+);
+
+/* ------------------MEDIA QUERY----------------- */
+
+@mixin xs {
+  @media (min-width: map-get($breakpoints, "xs")) {
+    @content;
+  }
+}
+
+@mixin sm {
+  @media (min-width: map-get($breakpoints, "sm")) {
+    @content;
+  }
+}
+
+@mixin md {
+  @media (min-width: map-get($breakpoints, "md")) {
+    @content;
+  }
+}
+
+@mixin lg {
+  @media (min-width: map-get($breakpoints, "lg")) {
+    @content;
+  }
+}
+
+@mixin breakpoints($bp: 0) {
+  @media (min-width: $bp) {
+    @content;
+  }
+}
+
+body {
+  @include xs {
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0.5) 0%,rgba(0,0,0,0.5) 100%), url(/assets/bgImg/MOBILE\ BG\ ABOUT.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    padding: $body-paddingX-mobile;
+    min-width: 100vw;
+    min-height: 100vh;
+  }
+
+  @include sm {
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0.5) 0%,rgba(0,0,0,0.5) 100%), url(/assets/bgImg/TABLET\ BG\ ABOUT.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    padding: $body-paddingX-tblt;
+    min-width: 100vw;
+    min-height: 100vh;
+  }
+
+  @include md {
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0.5) 0%,rgba(0,0,0,0.5) 100%), url(/assets/bgImg/DESKTOP\ S\ ABOUT.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    padding: $body-paddingX-dskS;
+    min-width: 100vw;
+    min-height: 100vh;
+  }
+
+  @include lg {
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0.5) 0%,rgba(0,0,0,0.5) 100%), url(/assets/bgImg/DESKTOP\ L\ ABOUT.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    padding: $body-paddingX-dskL;
+    min-width: 100vw;
+    min-height: 100vh;
+  }
+}
+
+.wrapper{
+  @include xs {
+   height: 50rem;   
+   margin-top: 8rem;
+   overflow: scroll;
+  }
+
+  @include sm {
+    height: 85rem;   
+    margin-top: 16rem;
+  }
+
+  @include md {
+    height: 47rem;   
+    margin-top: 16rem;
+  }
+
+  @include lg {
+    height: 75rem;   
+    margin-top: 19rem;
+    margin-bottom: 10rem;
+  }
+}

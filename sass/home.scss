@@ -3,6 +3,7 @@
 @import "mixins";
 @import "nav";
 @import "footer";
+@import "breakBodyHome";
 @import "breakpoints";
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
 
@@ -12,11 +13,7 @@ body{
     @include flex-center(column, null)
 }
 
-.nav-dsk-container{
-  width: 100%;
-  height: 100%;
-  @include flex-between(row, null);
-}
+
 
 .wrapper{
     width: $wrapper-width-mobile;

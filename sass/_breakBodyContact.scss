@@ -1,0 +1,143 @@
+$breakpoints: (
+  "xs": 0,
+  "sm": 744px,
+  "md": 1280px,
+  "lg": 1440px,
+);
+
+/* ------------------MEDIA QUERY----------------- */
+
+@mixin xs {
+  @media (min-width: map-get($breakpoints, "xs")) {
+    @content;
+  }
+}
+
+@mixin sm {
+  @media (min-width: map-get($breakpoints, "sm")) {
+    @content;
+  }
+}
+
+@mixin md {
+  @media (min-width: map-get($breakpoints, "md")) {
+    @content;
+  }
+}
+
+@mixin lg {
+  @media (min-width: map-get($breakpoints, "lg")) {
+    @content;
+  }
+}
+
+@mixin breakpoints($bp: 0) {
+  @media (min-width: $bp) {
+    @content;
+  }
+}
+
+
+body {
+    @include xs {
+      background-image: linear-gradient(to bottom, rgba(0,0,0,0.5) 0%,rgba(0,0,0,0.5) 100%), url(/assets/bgImg/MOBILE\ BG\ CONTACT.svg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-attachment: fixed;
+      padding: $body-paddingX-mobile;
+      min-width: 100vw;
+      min-height: 100vh;
+      @include flex-center(column, null);
+    }
+  
+    @include sm {
+      background-image: linear-gradient(to bottom, rgba(0,0,0,0.5) 0%,rgba(0,0,0,0.5) 100%), url(/assets/bgImg/TABLET\ BG\ CONTACT.svg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-attachment: fixed;
+      padding: $body-paddingX-tblt;
+      min-width: 100vw;
+      min-height: 100vh;
+      @include flex-center(column, null);
+    }
+  
+    @include md {
+      background-image: linear-gradient(to bottom, rgba(0,0,0,0.5) 0%,rgba(0,0,0,0.5) 100%), url(/assets/bgImg/DESKTOP\ S\ CONTACT.svg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-attachment: fixed;
+      padding: $body-paddingX-dskS;
+      min-width: 100vw;
+      min-height: 100vh;
+      @include flex-center(column, null);
+    }
+  
+    @include lg {
+      background-image: linear-gradient(to bottom, rgba(0,0,0,0.5) 0%,rgba(0,0,0,0.5) 100%), url(/assets/bgImg/DESKTOP\ L\ CONTACT.svg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-attachment: fixed;
+      padding: $body-paddingX-dskL;
+      min-width: 100vw;
+      min-height: 100vh;
+      @include flex-center(column, null);
+    }
+  }
+
+
+  .wrapper {
+    @include xs {
+      margin-top: 7rem;
+      @include flex-center(column, 3rem);
+      overflow: scroll;
+      height: 48rem;
+      width: 80%;
+    }
+  
+    @include sm {
+        margin-top: 10rem;
+        @include flex-center(column, 3rem);
+        overflow: scroll;
+        height: 80rem;
+        width: 80%;
+    }
+  
+    @include md {
+        margin-top: 17rem;
+        margin-bottom: 12rem;
+        @include flex-center(row, 1rem);
+        overflow: scroll;
+        height: 45rem;
+        width: 100%;
+    }
+  
+    @include lg {
+        margin-top: 7rem;
+        @include flex-center(row, 2rem);
+        overflow: scroll;
+        height: 90rem;
+        width: 140rem;
+    }
+  }
+
+  .form-container{
+    @include xs {
+        
+      }
+    
+      @include sm {
+         
+      }
+    
+      @include md {
+          
+      }
+    
+      @include lg {
+          
+      }
+  }
