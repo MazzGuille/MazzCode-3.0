@@ -147,6 +147,10 @@ $breakpoints: (
     font-size: $fs-mobile-footer;
     color: $primary-color;
     font-weight: 500;
+
+    &:hover {
+      cursor: pointer;
+    }
   }
 
   @include sm {

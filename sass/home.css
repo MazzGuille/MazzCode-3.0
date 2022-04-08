@@ -306,6 +306,9 @@ select {
     color: #fff;
     font-weight: 500;
   }
+  .resposive-font-footer:hover {
+    cursor: pointer;
+  }
 }
 @media (min-width: 744px) {
   .resposive-font-footer {
@@ -1056,4 +1059,7 @@ body {
   text-align: center;
   outline: none;
   border: none;
+}
+.btn:hover {
+  cursor: pointer;
 }/*# sourceMappingURL=home.css.map */

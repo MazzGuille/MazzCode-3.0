@@ -210,6 +210,83 @@ select {
   }
 }
 
+@media (min-width: 0) {
+  .preview-container {
+    width: 100%;
+    height: 15rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+  }
+}
+@media (min-width: 744px) {
+  .preview-container {
+    width: 100%;
+    height: 20rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+  }
+}
+@media (min-width: 1440px) {
+  .preview-container {
+    width: 100%;
+    height: 30rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+  }
+}
+
+@media (min-width: 0) {
+  .diverxo {
+    background-image: url(/assets/previews/DIVERXO.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 10rem;
+    width: 15rem;
+  }
+}
+@media (min-width: 744px) {
+  .diverxo {
+    height: 20rem;
+    width: 25rem;
+  }
+}
+@media (min-width: 1440px) {
+  .diverxo {
+    height: 25rem;
+    width: 30rem;
+  }
+}
+
+@media (min-width: 0) {
+  .space {
+    background-image: url(/assets/previews/SPACE.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 10rem;
+    width: 15rem;
+  }
+}
+@media (min-width: 744px) {
+  .space {
+    height: 20rem;
+    width: 25rem;
+  }
+}
+@media (min-width: 1440px) {
+  .space {
+    height: 25rem;
+    width: 30rem;
+  }
+}
+
 /* ------------------MEDIA QUERY----------------- */
 /* ------------------FONT SIZE----------------- */
 @media (min-width: 0) {
@@ -333,6 +410,9 @@ select {
     font-size: 0.8rem;
     color: #fff;
     font-weight: 500;
+  }
+  .resposive-font-footer:hover {
+    cursor: pointer;
   }
 }
 @media (min-width: 744px) {
@@ -1025,29 +1105,4 @@ select {
     width: 45%;
     list-style: none;
   }
-}
-
-.preview-container {
-  width: 100%;
-  height: 15rem;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-direction: row;
-}
-.preview-container .diverxo {
-  background-image: url(/assets/previews/DIVERXO.svg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  height: 10rem;
-  width: 15rem;
-}
-.preview-container .space {
-  background-image: url(/assets/previews/SPACE.svg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  height: 10rem;
-  width: 15rem;
 }/*# sourceMappingURL=about.css.map */

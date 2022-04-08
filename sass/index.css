@@ -290,6 +290,9 @@ select {
     color: #fff;
     font-weight: 500;
   }
+  .resposive-font-footer:hover {
+    cursor: pointer;
+  }
 }
 @media (min-width: 744px) {
   .resposive-font-footer {

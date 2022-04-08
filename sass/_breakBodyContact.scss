@@ -49,6 +49,7 @@ body {
       min-width: 100vw;
       min-height: 100vh;
       @include flex-center(column, null);
+      overflow: hidden;
     }
   
     @include sm {
@@ -61,6 +62,7 @@ body {
       min-width: 100vw;
       min-height: 100vh;
       @include flex-center(column, null);
+      overflow: hidden;
     }
   
     @include md {
@@ -73,6 +75,7 @@ body {
       min-width: 100vw;
       min-height: 100vh;
       @include flex-center(column, null);
+      overflow: hidden;
     }
   
     @include lg {
@@ -85,6 +88,7 @@ body {
       min-width: 100vw;
       min-height: 100vh;
       @include flex-center(column, null);
+      overflow: hidden;
     }
   }
 
@@ -93,34 +97,36 @@ body {
     @include xs {
       margin-top: 7rem;
       @include flex-center(column, 3rem);
-      overflow: scroll;
       height: 48rem;
       width: 80%;
+      overflow: hidden;
     }
   
     @include sm {
         margin-top: 10rem;
         @include flex-center(column, 3rem);
-        overflow: scroll;
         height: 80rem;
         width: 80%;
+        overflow: hidden;
+        overflow: hidden;
     }
   
     @include md {
         margin-top: 17rem;
         margin-bottom: 12rem;
         @include flex-center(row, 1rem);
-        overflow: scroll;
         height: 45rem;
-        width: 100%;
+        width: 90%;
+        overflow: hidden;
     }
   
     @include lg {
         margin-top: 7rem;
         @include flex-center(row, 2rem);
-        overflow: scroll;
         height: 90rem;
         width: 140rem;
+        overflow: hidden;
+
     }
   }
 
