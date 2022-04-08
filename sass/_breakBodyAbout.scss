@@ -88,6 +88,7 @@ body {
    height: 50rem;   
    margin-top: 8rem;
    overflow: scroll;
+   overflow-x: hidden;
   }
 
   @include sm {
@@ -96,8 +97,9 @@ body {
   }
 
   @include md {
-    height: 47rem;   
+    height: 40rem;   
     margin-top: 16rem;
+    
   }
 
   @include lg {

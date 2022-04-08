@@ -98,13 +98,15 @@ body {
     @include md {
       margin-top: 10rem;
      max-height: 80vh;
-     @include flex-center(column, null)
+     @include flex-center(column, null);
+     position: relative;
     }
   
     @include lg {
-      margin-top: 12rem;
+      margin-top: 15rem;
      max-height: 80vh;
-     @include flex-center(column, null)
+     @include flex-center(column, null);
+     position: relative;
     }
   }
 
@@ -131,6 +133,7 @@ body {
       height: 8rem;
       display: grid;
       place-content: center;
+      position: absolute;
     }
   
     @include md {
@@ -143,6 +146,8 @@ body {
       height: 10rem;
       display: grid;
       place-content: center;
+      top: 45%;
+      left: 80%;
     }
   
     @include lg {

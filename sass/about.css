@@ -187,6 +187,7 @@ select {
     height: 50rem;
     margin-top: 8rem;
     overflow: scroll;
+    overflow-x: hidden;
   }
 }
 @media (min-width: 744px) {
@@ -197,7 +198,7 @@ select {
 }
 @media (min-width: 1280px) {
   .wrapper {
-    height: 47rem;
+    height: 40rem;
     margin-top: 16rem;
   }
 }

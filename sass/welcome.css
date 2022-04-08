@@ -208,16 +208,18 @@ select {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    position: relative;
   }
 }
 @media (min-width: 1440px) {
   .wrap {
-    margin-top: 12rem;
+    margin-top: 15rem;
     max-height: 80vh;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    position: relative;
   }
 }
 
@@ -245,6 +247,7 @@ select {
     height: 8rem;
     display: grid;
     place-content: center;
+    position: absolute;
   }
 }
 @media (min-width: 1280px) {
@@ -258,6 +261,8 @@ select {
     height: 10rem;
     display: grid;
     place-content: center;
+    top: 45%;
+    left: 80%;
   }
 }
 @media (min-width: 1440px) {
