@@ -274,14 +274,14 @@ select {
 }
 @media (min-width: 1280px) {
   .resposive-font-h1 {
-    font-size: 8rem;
+    font-size: 7rem;
     color: #fff;
     font-weight: 700;
   }
 }
 @media (min-width: 1440px) {
   .resposive-font-h1 {
-    font-size: 11rem;
+    font-size: 9rem;
     color: #fff;
     font-weight: 700;
   }
@@ -303,14 +303,14 @@ select {
 }
 @media (min-width: 1280px) {
   .resposive-font-h2 {
-    font-size: 7rem;
+    font-size: 6rem;
     color: #fff;
     font-weight: 600;
   }
 }
 @media (min-width: 1440px) {
   .resposive-font-h2 {
-    font-size: 10rem;
+    font-size: 8rem;
     color: #fff;
     font-weight: 600;
   }
@@ -332,14 +332,14 @@ select {
 }
 @media (min-width: 1280px) {
   .resposive-font-h3 {
-    font-size: 8rem;
+    font-size: 5rem;
     color: #fff;
     font-weight: 400;
   }
 }
 @media (min-width: 1440px) {
   .resposive-font-h3 {
-    font-size: 9rem;
+    font-size: 7rem;
     color: #fff;
     font-weight: 400;
   }

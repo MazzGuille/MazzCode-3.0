@@ -37,128 +37,147 @@ $breakpoints: (
   }
 }
 
-
 body {
-    @include xs {
-      background-image: linear-gradient(to bottom, rgba(0,0,0,0.5) 0%,rgba(0,0,0,0.5) 100%), url(/assets/bgImg/MOBILE\ BG\ WELCOME.svg);
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position: center;
-      background-attachment: fixed;
-      padding: $body-paddingX-mobile;
-      min-width: 100vw;
-      min-height: 100vh;
-    }
-  
-    @include sm {
-      background-image: linear-gradient(to bottom, rgba(0,0,0,0.5) 0%,rgba(0,0,0,0.5) 100%), url(/assets/bgImg/TABLET\ BG\ WELCOME.svg);
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position: center;
-      background-attachment: fixed;
-      padding: $body-paddingX-tblt;
-      min-width: 100vw;
-      min-height: 100vh;
-    }
-  
-    @include md {
-      background-image: linear-gradient(to bottom, rgba(0,0,0,0.5) 0%,rgba(0,0,0,0.5) 100%), url(/assets/bgImg/DESKTOP\ S\ WELCOME.svg);
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position: center;
-      background-attachment: fixed;
-      padding: $body-paddingX-dskS;
-      min-width: 100vw;
-      min-height: 100vh;
-    }
-  
-    @include lg {
-      background-image: linear-gradient(to bottom, rgba(0,0,0,0.5) 0%,rgba(0,0,0,0.5) 100%), url(/assets/bgImg/DESKTOP\ L\ WELCOME.svg);
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position: center;
-      background-attachment: fixed;
-      padding: $body-paddingX-dskL;
-      min-width: 100vw;
-      min-height: 100vh;
-    }
+  @include xs {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0.5) 0%,
+        rgba(0, 0, 0, 0.5) 100%
+      ),
+      url(/assets/bgImg/MOBILE\ BG\ WELCOME.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    padding: $body-paddingX-mobile;
+    min-width: 100vw;
+    min-height: 100vh;
   }
 
-  .wrap {
-    @include xs {
-      margin-top: 45%;
-      @include flex-center(column, null)
-    }
-  
-    @include sm {
-      margin-top: 45%;
-      @include flex-center(column, null)
-    }
-  
-    @include md {
-      margin-top: 10rem;
-     max-height: 80vh;
-     @include flex-center(column, null);
-     position: relative;
-    }
-  
-    @include lg {
-      margin-top: 15rem;
-     max-height: 80vh;
-     @include flex-center(column, null);
-     position: relative;
-    }
+  @include sm {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0.5) 0%,
+        rgba(0, 0, 0, 0.5) 100%
+      ),
+      url(/assets/bgImg/TABLET\ BG\ WELCOME.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    padding: $body-paddingX-tblt;
+    min-width: 100vw;
+    min-height: 100vh;
   }
 
-  .img-container{
-    @include xs {
-      background-image: url(/assets/icons/MOBILE\ DOOR.svg);
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position: center;
-      background-attachment: fixed;
-      width: 5rem;
-      height: 5rem;
-      display: grid;
-      place-content: center;
-    }
-  
-    @include sm {
-      background-image: url(/assets/icons/TABLET\ DOOR.svg);
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position: center;
-      background-attachment: fixed;
-      width: 8rem;
-      height: 8rem;
-      display: grid;
-      place-content: center;
-      position: absolute;
-    }
-  
-    @include md {
-      background-image: url(/assets/icons/DESKTOP\ S\ DOOR.svg);
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position: center;
-      background-attachment: fixed;
-      width: 10rem;
-      height: 10rem;
-      display: grid;
-      place-content: center;
-      top: 45%;
-      left: 80%;
-    }
-  
-    @include lg {
-      background-image: url(/assets/icons/DESKTOP\ L\ DOOR.svg);
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position: center;
-      background-attachment: fixed;
-      width: 13rem;
-      height: 13rem;
-      display: grid;
-      place-content: center;
-    }
+  @include md {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0.5) 0%,
+        rgba(0, 0, 0, 0.5) 100%
+      ),
+      url(/assets/bgImg/DESKTOP\ S\ WELCOME.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    padding: $body-paddingX-dskS;
+    min-width: 100vw;
+    min-height: 100vh;
   }
+
+  @include lg {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0.5) 0%,
+        rgba(0, 0, 0, 0.5) 100%
+      ),
+      url(/assets/bgImg/DESKTOP\ L\ WELCOME.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    padding: $body-paddingX-dskL;
+    min-width: 100vw;
+    min-height: 100vh;
+  }
+}
+
+.wrap {
+  @include xs {
+    margin-top: 45%;
+    @include flex-center(column, null);
+  }
+
+  @include sm {
+    margin-top: 45%;
+    @include flex-center(column, null);
+  }
+
+  @include md {
+    margin-top: 12rem;
+    max-height: 80vh;
+    @include flex-center(column, null);
+    position: relative;
+  }
+
+  @include lg {
+    margin-top: 18rem;
+    max-height: 80vh;
+    @include flex-center(column, null);
+    position: relative;
+  }
+}
+
+.img-container {
+  @include xs {
+    background-image: url(/assets/icons/MOBILE\ DOOR.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    width: 5rem;
+    height: 5rem;
+    display: grid;
+    place-content: center;
+  }
+
+  @include sm {
+    background-image: url(/assets/icons/TABLET\ DOOR.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    width: 8rem;
+    height: 8rem;
+    display: grid;
+    place-content: center;
+    position: absolute;
+  }
+
+  @include md {
+    background-image: url(/assets/icons/DESKTOP\ S\ DOOR.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    width: 10rem;
+    height: 10rem;
+    display: grid;
+    place-content: center;
+    top: 45%;
+    left: 80%;
+  }
+
+  @include lg {
+    background-image: url(/assets/icons/DESKTOP\ L\ DOOR.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    width: 13rem;
+    height: 13rem;
+    display: grid;
+    place-content: center;
+  }
+}
